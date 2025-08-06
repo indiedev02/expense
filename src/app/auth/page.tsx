@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -42,8 +41,8 @@ const AuthPage = () => {
     toast(error?.message);
   }
   return (
-    <div className="flex h-screen items-center justify-center max-w-md">
-      <Card>
+    <div className="flex h-screen items-center justify-center max-w-md p-4 w-md">
+      <Card className="w-full">
         <CardHeader>
           <CardTitle>Login</CardTitle>
         </CardHeader>
