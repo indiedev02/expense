@@ -161,7 +161,10 @@ const Page = () => {
     await fetchWeeklyExpenses();
     await fetchTodayExpenses();
   };
-
+  useEffect(() => {
+    fetchWeeklyExpenses();
+    fetchTodayExpenses();
+  }, []);
   return (
     <div className="max-w-md w-full mx-auto flex flex-col gap-4 px-2 py-4">
       <NavBar />
